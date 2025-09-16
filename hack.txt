@@ -1,0 +1,145 @@
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
+ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.Draggable = true
+ImageButton.Image = "http://www.roblox.com/asset/?id=78132401667470"
+
+UICorner.CornerRadius = UDim.new(1, 10) 
+UICorner.Parent = ImageButton
+
+ImageButton.MouseButton1Down:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
+end)
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+repeat wait() until game:IsLoaded()
+local Window = Fluent:CreateWindow({
+    Title = "ThếAnh hub ",
+    SubTitle = "script tổng hợp",
+    TabWidth = 157,
+    Size = UDim2.fromOffset(500, 300),
+    Acrylic = true,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.End
+})
+local Tabs = {
+        Main0=Window:AddTab({ Title="Thông tin" }),
+        Main1=Window:AddTab({ Title="script Blox-Fruits" }),
+}
+Tabs.Main0:AddButton({
+    Title = "Discord Thế Anh",
+    Description = "https://discord.gg/4us5GBnu",
+    Callback = function()
+        setclipboard("https://discord.gg/4us5GBnu")
+    end
+})
+Tabs.Main0:AddButton({
+    Title = "tik tok Thế Anh",
+    Description = "www.tiktok.com/@ththunhong1?_t=ZS-8wVlCAMZ1hH&_r=1",
+    Callback = function()
+        setclipboard("https://www.tiktok.com/@ththunhong1?_t=ZS-8wVlCAMZ1hH&_r=1")
+    end
+})
+    Tabs.Main1:AddButton({
+    Title="ngocbong",
+    Description="ngon",
+    Callback=function()
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ngocbonggaming/script/refs/heads/main/NgocBongVn.lua"))()
+})
+    Tabs.Main1:AddButton({
+    Title="redz",
+    Description="ngon",
+    Callback=function()
+local Settings = {
+    JoinTeam = "Pirates"; -- Pirates / Marines
+    Translator = true;   -- true / false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+})
+    Tabs.Main1:AddButton({
+    Title="tuấn anh ios",
+    Description="ngon",
+    Callback=function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/TuanAnhIOS/refs/heads/main/TuanAnhIOS-Main.Lua"))()
+
+})
+
+    Tabs.Main1:AddButton({
+    Title="AnhTuanDzai-Hub",
+    Description="ngon",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/TuanAnhIOS/refs/heads/main/TuanAnhIOS.lua"))()
+})
+
+    Tabs.Main1:AddButton({
+    Title="Yiner Hub",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-Yiner/Yiner-Hub/refs/heads/main/main.lua"))() 
+})
+    Tabs.Main1:AddButton({
+    Title="Vxezehub",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHub99daysintheforest.lua"))()
+})
+    Tabs.Main1:AddButton({
+    Title="Kurdhub",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ninja10908/S4/refs/heads/main/Kurdhub"))()
+})
+
+
+    Tabs.Main1:AddButton({
+    Title="QuantumOnyx",
+    Description="",
+    Callback=function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+
+})
+
+
+    Tabs.Main1:AddButton({
+    Title="BlueX-Hub",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
+})
+
+
+    Tabs.Main1:AddButton({
+    Title="Vxezehub",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubMain"))()
+
+})
+
+
+    Tabs.Main1:AddButton({
+    Title="vannguyenmainhub",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vannguyen740/sturdy-fishstick/refs/heads/main/vannguyenmainhub.lua.txt"))()
+})
+
+
+
+
+
+
+
